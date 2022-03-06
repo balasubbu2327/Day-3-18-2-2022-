@@ -1,0 +1,39 @@
+var data=[{
+    "name":"Sumanth Hegde",
+"age":25,
+"degree":["Bsc","MCA"]},
+{"name":"shreesha",
+"age":27,
+"degree":["BE","MCA"]},
+{"name":"Shreevatsa",
+"age":45,
+"degree":["BE","MBA"]},
+{"name":"John",
+"age":30,
+"degree":["MBBS","MD","DM"]}
+];
+
+
+console.log("-------------------------------------------------------");
+console.log("for loop");
+for (let i = 0; i < data.length; i++) {
+    console.log(data[i]);
+  }
+
+
+console.log("-------------------------------------------------------");
+console.log("for in loop");
+
+for (let i in data) {
+    console.log(data[i]);
+  }
+
+  console.log("=========================================================");
+  console.log("for of loop");
+  for (const v of data) {
+    console.log(v);
+  }
+
+  console.log("=========================================================");
+  console.log("forEach loop");
+  data.forEach((v,i) => console.log(data[i]));
